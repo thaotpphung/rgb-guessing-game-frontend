@@ -1,18 +1,24 @@
-import React, { Component } from 'react';
+import React from "react";
 // import '../color_game.css';
 
-const Square = ({color, winningColor, onWinningViewChange, onLosingViewChange }) => {
-    return (
-        <div
-            onClick={ winningColor === color ? onWinningViewChange() : onLosingViewChange() }
-            className="square"
-            style={{ 
-                backgroundColor: color 
-            }}
-        >
-        </div>
-    )   
-}
+const Square = ({
+  color,
+  winningColor,
+  onWinningViewChange,
+  onLosingViewChange,
+}) => {
+  return (
+    <div
+      onClick={
+        winningColor === color ? onWinningViewChange() : onLosingViewChange()
+      }
+      className="square"
+      style={{
+        backgroundColor: color,
+      }}
+    ></div>
+  );
+};
 
 // class Square extends Component {
 //     //render a square with different properties

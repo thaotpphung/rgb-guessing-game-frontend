@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Heading from "../components/Heading/Heading";
 import Stripe from "../components/Stripe/Stripe";
-import Square from "../components/Square/Square";
+// import Square from "../components/Square/Square";
+import SquareList from "../components/SquareList/SquareList";
 import "./App.css";
 
 class App extends Component {
@@ -25,21 +26,12 @@ class App extends Component {
           onEasyModeChange={() => this.randomColorGen(3)}
           onHardModeChange={() => this.randomColorGen(6)}
         />
-        <div>
-          <div className="container">
-            {this.state.colors.map((color) => (
-              <Square
-                key={color}
-                color={color}
-                winningColor = {this.state.winningColor}
-                onLosingViewChange = { () => this.onLosingViewChange}
-                onWinningViewChange = { () => this.onWinningViewChange}
-                squareColor={this.formatSquareColor}
-              >
-              </Square>
-            ))}
-          </div>
-        </div>
+        <SquareList
+          colors = {this.state.colors}
+          winningColor = {this.state.winningColor}
+          onWinningViewChange = {() => this.onWinningViewChange}
+          onLosingViewChange = {() => this.onLosingViewChange}
+        />
       </div>
     );
   }
