@@ -1,39 +1,7 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
 body {
-	font-family: Calibri;
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
 }
 
 .heading {
@@ -52,22 +20,25 @@ body {
 }
 
 .stripe {
-	background-color: white;
+  background: white;
+	height: 30px;
 	text-align: center;
+	color: black;
 }
 
 button {
-	color: steelblue;
-	box-shadow: 1px 1px 5px black;
-	margin: 10px;
-	padding: 10px;
-	border-radius: 20%;
-	height: 100%;
-	font-weight: 700;
-	letter-spacing: 1px;
+  border: none;
 	background: none;
 	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
 	font-size: inherit;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	outline: none;
 }
 
 .container {
@@ -77,8 +48,17 @@ button {
 
 .square {
 	width: 30%;
+	/* background: purple; */
 	padding-bottom: 30%;
 	float: left;
 	margin: 1.66%;
-	border-radius: 20%;
+	border-radius: 15%;
+	transition: background 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+}
+
+.selected {
+	color: white;
+	background: steelblue;
 }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Heading from "../components/Heading/Heading";
 import Stripe from "../components/Stripe/Stripe";
-// import Square from "../components/Square/Square";
 import SquareList from "../components/SquareList/SquareList";
 import "./App.css";
 
@@ -49,8 +48,8 @@ class App extends Component {
       b = Math.floor(Math.random() * 256);
       colors.push("rgb(" + r + ", " + g + ", " + b + ")");
     }
-    this.setState({ colors });
     winningColor = colors[Math.floor(Math.random() * colors.length)];
+    this.setState({ colors });
     this.setState({ winningColor });
     this.setState({ message: "Guess The Color" });
     this.setState({ headingColor: "steelblue" });
