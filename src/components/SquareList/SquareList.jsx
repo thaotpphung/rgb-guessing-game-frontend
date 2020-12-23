@@ -1,20 +1,18 @@
 import React from 'react';
 import "./SquareList.css";
 
-import Square from "../../components/Square/Square";
+import Square from "./Square/Square";
 
-const SquareList = ({ colors, winningColor, onWinningViewChange, onLosingViewChange}) => {
+const SquareList = ({ colors, onColorClick}) => {
   return (
-    <div class="container">
+    <div className="squareList">
       {
         colors.map((color, i) => {
           return (
             <Square
               key={i}
               color={color}
-              winningColor = {winningColor}
-              onWinningViewChange = {onWinningViewChange}
-              onLosingViewChange = {onLosingViewChange}
+              onColorClick = {(event) => onColorClick(event, color)}
             />
           );
         })
