@@ -1,5 +1,5 @@
 import React from "react";
-// import '../color_game.css';
+import "./Square.css";
 
 const Square = ({
   color,
@@ -13,10 +13,9 @@ const Square = ({
         winningColor === color ? onWinningViewChange() : onLosingViewChange()
       }
       className="square"
-      style={{
-        backgroundColor: color,
-      }}
-    ></div>
+      style={{backgroundColor: color}}
+    >
+    </div>
   );
 };
 

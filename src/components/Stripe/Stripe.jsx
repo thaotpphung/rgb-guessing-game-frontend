@@ -1,12 +1,13 @@
 import React from "react";
+import "./Stripe.css";
 
-const Stripe = ({onEasyModeChange, onHardModeChange}) => {
+const Stripe = ({message, onEasyModeChange, onHardModeChange}) => {
     return (
         <div className="stripe">
-            <button id="reset">New Colors</button>
-            {/* <span id="message"></span> */}
-            <button onClick={onEasyModeChange} class="mode">Easy</button>
-            <button onClick={onHardModeChange} class="mode selected">Hard</button>
+            <button onClick={onHardModeChange} className="mode">New Colors</button>
+            <span className="message">{message}</span>
+            <button onClick={onEasyModeChange} className="mode">Easy</button>
+            <button onClick={onHardModeChange} className="mode selected">Hard</button>
         </div>
     );
 }

@@ -6,11 +6,15 @@ import "./App.css";
 
 class App extends Component {
   state = {
-    message: "Guess The Color",
+    message: "",
     colors: [],
-    winningColor: [],
-    headingColor: "steelblue",
+    winningColor: '',
+    headingColor: ''
   };
+
+  componentDidMount() {
+    this.randomColorGen(6);
+  }
 
   //render The Color Game
   render() {
@@ -19,9 +23,9 @@ class App extends Component {
         <Heading
           headingColor={this.state.headingColor}
           colorValue={this.state.winningColor}
-          message={this.state.message}
         />
         <Stripe
+          message = {this.state.message}
           onEasyModeChange={() => this.randomColorGen(3)}
           onHardModeChange={() => this.randomColorGen(6)}
         />
@@ -56,12 +60,17 @@ class App extends Component {
   };
 
   onWinningViewChange = (clickedColor) => {
-    this.setState({ message: "Correct!" });
-    this.setState({ headingColor: this.state.winningColor }); 
+    this.setState(
+      { 
+        message: "Correct!",
+        headingColor: this.state.winningColor,
+        colors: this.state.colors.fill(this.state.winningColor)
+      }
+    );
   }
 
   onLosingViewChange = (clickedColor) =>  {
-    this.setState({ message: "Try Again" });
+    this.setState({ message: "Try Again!" });
   }
 }
     
