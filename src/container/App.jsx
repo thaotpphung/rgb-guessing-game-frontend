@@ -6,18 +6,48 @@ import "./App.css";
 class App extends Component {
   constructor(props) {
     super(props);
+    // configure levels
     this.state = {
       message: "",
       colors: [],
       winningColor: '',
       headingColor: '',
-      modes: ['easy', 'medium', 'hard'],
+      modes: [
+        {
+          label:'easy',
+          numSquares: 3
+         },
+         {
+          label: 'medium',
+          numSquares: 6
+         }, 
+         {
+          label: 'hard',
+          numSquares: 9
+         },
+        //  {
+        //   label: 'superhard',
+        //   numSquares: 12
+        //  },
+        //  {
+        //   label: 'megahard',
+        //   numSquares: 15
+        //  },
+        //  {
+        //   label: 'ultrahard',
+        //   numSquares: 18
+        //  }
+        ],
       currentMode: ''
     }
   }
 
   componentDidMount() {
-    this.onButtonClick(null, 'medium');
+    this.onButtonClick(null, {
+      label: 'medium',
+      numSquares: 6
+     }
+    );
   }
 
   onColorClick = (event, color) => {
@@ -39,19 +69,11 @@ class App extends Component {
   }
 
   onButtonClick = (event, mode) => {
-    let colors = [];
-    console.log("mode in button click", mode);
-    if (mode === 'easy') {
-      colors = this.generateRandomColors(3);
-    } else if (mode === 'medium') {
-      colors = this.generateRandomColors(6);
-    } else {
-      colors = this.generateRandomColors(9);
-    }
+    const colors = this.generateRandomColors(mode.numSquares);
     const winningColor = this.pickWinner(colors);
     this.setState({ colors });
-    this.setState({ currentMode: mode });
     this.setState({ winningColor });
+    this.setState({ currentMode: mode.label });
     this.setState({ message: "Guess The Color" });
     this.setState({ headingColor: "steelblue" });
   }

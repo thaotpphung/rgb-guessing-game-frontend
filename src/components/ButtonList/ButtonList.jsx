@@ -9,7 +9,7 @@ const ButtonList = ({ currentMode, modes, onButtonClick}) => {
           return (
             <Button
               key={i}
-              mode={mode}
+              mode={mode.label}
               currentMode = {currentMode}
               onButtonClick = {(event) => onButtonClick(event, mode)}
             />
