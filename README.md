@@ -1,5 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# RGB-Guess
+>  A fun game for you to guess RGB color based on the displayed code
+> Deployed to Github Pages, live at:  https://thaotpphung.github.io/react-color-guessing-game/
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Available Scripts
 
 In the project directory, you can run:
