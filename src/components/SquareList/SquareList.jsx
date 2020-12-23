@@ -10,7 +10,7 @@ const SquareList = ({ colors, onColorClick}) => {
         colors.map((color, i) => {
           return (
             <Square
-              key={i}
+              key={color}
               color={color}
               onColorClick = {(event) => onColorClick(event, color)}
             />

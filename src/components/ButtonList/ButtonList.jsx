@@ -8,7 +8,7 @@ const ButtonList = ({ currentMode, modes, onButtonClick}) => {
         modes.map((mode, i) => {
           return (
             <Button
-              key={i}
+              key={mode.numSquares}
               modeLabel={mode.label}
               currentModeLabel = {currentMode.label}
               onButtonClick = {(event) => onButtonClick(event, mode)}
