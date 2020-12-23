@@ -10,8 +10,8 @@ const Stripe = ({currentMode, modes, message, onButtonClick}) => {
         <div className="stripe">
             <Button
               key={10}
-              mode={'New Colors'}
-              currentMode = {currentMode}
+              modeLabel={'New Colors'}
+              currentModeLabel = {currentMode.label}
               onButtonClick = {(event) => onButtonClick(event, currentMode)}
             />
 

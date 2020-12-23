@@ -38,7 +38,7 @@ class App extends Component {
         //   numSquares: 18
         //  }
         ],
-      currentMode: ''
+      currentMode: {}
     }
   }
 
@@ -73,7 +73,7 @@ class App extends Component {
     const winningColor = this.pickWinner(colors);
     this.setState({ colors });
     this.setState({ winningColor });
-    this.setState({ currentMode: mode.label });
+    this.setState({ currentMode: mode });
     this.setState({ message: "Guess The Color" });
     this.setState({ headingColor: "steelblue" });
   }

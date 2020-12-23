@@ -2,12 +2,12 @@ import React from "react";
 import "./Button.css";
 
 const Button = ({
-  currentMode,
-  mode,
+  currentModeLabel,
+  modeLabel,
   onButtonClick
 }) => {
   const classes = ['button'];
-  if (currentMode === mode) {
+  if (currentModeLabel === modeLabel) {
     classes.push('selected')
   }
 
@@ -16,7 +16,7 @@ const Button = ({
       onClick={onButtonClick} 
       className={classes.join(' ')}
     >
-      {mode}
+      {modeLabel}
     </button>
   );
 };
