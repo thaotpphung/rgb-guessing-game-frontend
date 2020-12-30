@@ -3,15 +3,16 @@ import "./SquareList.css";
 
 import Square from "./Square/Square";
 
-const SquareList = ({ colors, onColorClick}) => {
+const SquareList = ({ isEnd, colors, onColorClick}) => {
   return (
     <div className="squareList">
       {
         colors.map((color, i) => {
           return (
             <Square
-              key={color}
+              key={color+i}
               color={color}
+              isEnd={isEnd}
               onColorClick = {(event) => onColorClick(event, color)}
             />
           );
