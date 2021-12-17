@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setGame, saveGame } from '../../../redux/actions/gameActions';
+import { setGame } from '../../../redux/actions/gameActions';
 import './Square.css';
 import { LEVELS } from '../../../constants/games';
 import { resetColors } from '../../../utils/colors';

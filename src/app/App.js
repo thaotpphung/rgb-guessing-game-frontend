@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import './App.css';
 import SignIn from '../view/pages/SignIn/SignIn';
 import SignUp from '../view/pages/SignUp/SignUp';
