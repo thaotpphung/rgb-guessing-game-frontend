@@ -8,3 +8,8 @@
   background-color: #232323;
   height: 100vh;
 }
+
+.error {
+  width: 50%;
+  margin: 10px auto;
+}

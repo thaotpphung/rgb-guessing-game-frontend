@@ -9,7 +9,7 @@ import signUpForm from './form';
 const SignUp = () => {
   const dispatch = useDispatch();
   const history = useHistory();
-  const { loggedInUser } = useSelector((state) => state.user);
+  const { loggedInUser, error } = useSelector((state) => state.user);
 
   const initialForm = {
     name: '',
@@ -49,6 +49,7 @@ const SignUp = () => {
             <Link className="grey-text text-darken-1" to="/signin">
               Already have an account? Sign In
             </Link>
+            <div className="red-text">{error !== '' && error}</div>
           </div>
           <form noValidate onSubmit={handleSubmit}>
             {signUpForm.map((field, idx) => {
