@@ -1,0 +1,20 @@
+.custom-modal {
+  background-color: white;
+  color: black;
+  border-radius: 2%;
+  width: 40%;
+  margin: 30% auto;
+  padding: 5% 0;
+  text-align: center;
+  height: 140px;
+  max-height: 140px;
+}
+
+.model-label {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.model-content {
+  margin: 10px
+}

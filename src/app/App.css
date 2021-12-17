@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+.steelblue {
+  background-color: steelblue !important;
+}
+
+.button {
+  width: 150px;
+  border-radius: 3px;
+  letter-spacing: 1.5px;
+  margin-top: 1rem;
+}
+
+.game {
+  background-color: #232323;
+  height: 100vh;
+}
+
+.auth-container {
+ width: 60%;
+ margin: 5% auto;
+}
