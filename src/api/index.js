@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getEnvVars } from '../utils/envs';
 
-const env = getEnvVars(window.location.host);
+const env = getEnvVars();
 const API = axios.create({ baseURL: env.BASE_URL });
 
 API.interceptors.request.use((req) => {

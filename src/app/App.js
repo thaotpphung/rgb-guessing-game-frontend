@@ -8,9 +8,8 @@ import Game from '../view/pages/Game/Game';
 import NotFound from '../view/pages/NotFound/NotFound';
 import StatusBar from '../view/components/StatusBar/StatusBar';
 import Header from '../view/components/Header/Header';
-import openSocket from 'socket.io-client';
 import { resetColors } from '../utils/colors';
-import { setGame, saveGame } from '../redux/actions/gameActions';
+import { setGame } from '../redux/actions/gameActions';
 import { LEVELS } from '../constants/games';
 
 function App() {

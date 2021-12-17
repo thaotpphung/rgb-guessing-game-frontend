@@ -4,18 +4,21 @@ const LEVELS = {
     label: 'easy',
     numSquares: 3,
     score: 10,
+    chanceScore: 2,
   },
   2: {
     value: 2,
     label: 'medium',
     numSquares: 6,
     score: 20,
+    chanceScore: 4,
   },
   3: {
     value: 3,
     label: 'hard',
     numSquares: 9,
     score: 30,
+    chanceScore: 6,
   },
 };
 
