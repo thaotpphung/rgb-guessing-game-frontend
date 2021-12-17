@@ -1,6 +1,7 @@
 .square-list {
 	margin: 20px auto;
 	width: 45%;
+	max-height: 100vh
 }
 
 @media only screen and (max-width: 600px) {
