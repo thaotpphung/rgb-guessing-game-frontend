@@ -14,7 +14,7 @@ export const getEnvVars = () => {
   switch (true) {
     case host.includes('localhost'):
       return envVars.local;
-    case host.includes('rgbgame'):
+    case host.includes('rgb'):
       return envVars.prod;
     default:
       console.error('Failed to load configuration', {
