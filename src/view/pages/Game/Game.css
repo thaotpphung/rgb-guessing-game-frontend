@@ -1,0 +1,10 @@
+.layout {
+	display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game {
+  background-color: #232323;
+  height: 100vh;
+}

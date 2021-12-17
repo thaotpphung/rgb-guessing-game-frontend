@@ -1,0 +1,16 @@
+.heading {
+	text-align: center;
+    color: #ffffff;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 20px 0;
+    transition: background-color .6s;
+}
+
+.heading .color {
+	font-size: 60px;
+}
+
+.space-around {
+    margin: 10px;
+}
