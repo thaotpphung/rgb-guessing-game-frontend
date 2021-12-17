@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './SquareList.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { saveGame } from '../../../redux/actions/gameActions';
+import { useSelector } from 'react-redux';
 import Square from '../Square/Square';
 
 const SquareList = () => {
-  const { colors, result, score, level } = useSelector((state) => state.game);
-  const { loggedInUser } = useSelector((state) => state.user);
-  const dispatch = useDispatch();
+  const { colors } = useSelector((state) => state.game);
 
   return (
     <div className="square-list">

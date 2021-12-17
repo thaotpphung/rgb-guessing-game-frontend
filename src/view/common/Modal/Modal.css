@@ -2,12 +2,9 @@
   background-color: white;
   color: black;
   border-radius: 2%;
-  width: 40%;
-  margin: 30% auto;
-  padding: 5% 0;
+  margin: 30px auto;
+  padding: 10px 0;
   text-align: center;
-  height: 140px;
-  max-height: 140px;
 }
 
 .model-label {

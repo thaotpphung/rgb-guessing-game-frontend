@@ -3,6 +3,7 @@ import openSocket from 'socket.io-client';
 import Modal from '../../common/Modal/Modal';
 import { getScores } from '../../../api/index';
 import { getEnvVars } from '../../../utils/envs';
+import '../../../app/App.css';
 
 const ScoreBoard = () => {
   const [scores, setScores] = useState([]);
@@ -25,13 +26,15 @@ const ScoreBoard = () => {
   }, []);
 
   return (
-    <Modal label="High Scores">
-      {scores.map((score, idx) => (
-        <div key={`score-${idx}`}>
-          {score.user.name}: {score.value}
-        </div>
-      ))}
-    </Modal>
+    <div className="board">
+      <Modal label="High Scores">
+        {scores.map((score, idx) => (
+          <div key={`score-${idx}`}>
+            {score.user.name}: {score.value}
+          </div>
+        ))}
+      </Modal>
+    </div>
   );
 };
 

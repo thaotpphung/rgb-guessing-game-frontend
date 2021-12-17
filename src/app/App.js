@@ -58,7 +58,7 @@ function App() {
   );
 
   return (
-    <div className="game">
+    <div className="app">
       <Header />
       <StatusBar />
       <Switch>

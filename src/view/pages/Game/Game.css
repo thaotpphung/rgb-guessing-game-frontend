@@ -1,7 +1,5 @@
-.layout {
-	display: grid;
-  grid-gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr;
+.game-layout {
+  display: flex
 }
 
 .game {
@@ -13,3 +11,10 @@
   width: 50%;
   margin: 10px auto;
 }
+
+@media only screen and (max-width: 600px) {
+  .game-layout {
+    flex-direction: column;
+  }
+}
+

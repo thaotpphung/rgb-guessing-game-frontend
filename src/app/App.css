@@ -1,6 +1,17 @@
+html, body
+{
+  width: 100%;
+  height: 100%;
+}
+
 body {
 	margin: 0;
 	font-family: "Montserrat", "Avenir";
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-color: #232323;
 }
 
 .steelblue {
@@ -14,12 +25,11 @@ body {
   margin-top: 1rem;
 }
 
-.game {
-  background-color: #232323;
-  height: 100vh;
-}
-
 .auth-container {
  width: 60%;
  margin: 5% auto;
+}
+
+.board {
+  margin: auto;
 }

@@ -9,11 +9,11 @@ const Game = () => {
   const { error } = useSelector((state) => state.game);
 
   return (
-    <div>
+    <div className="game-container">
       {error !== '' && (
         <div className="white center error red-text">{error}</div>
       )}
-      <div className="layout">
+      <div className="game-layout">
         <StatusBoard />
         <SquareList />
         <ScoreBoard />
