@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const useArray = (initialState) => {
+export default function useArray(initialState) {
   const [array, setArray] = useState(initialState);
 
   const push = (element) => {
@@ -48,6 +48,4 @@ const useArray = (initialState) => {
     addAt,
     reset,
   };
-};
-
-export default useArray;
+}

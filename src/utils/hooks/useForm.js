@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 
-const useForm = (
+export default function useForm(
   initialState,
   callback,
   validate = () => {
     return {};
   },
   optionalFields = []
-) => {
+) {
   const [values, setValues] = useState(initialState);
   const [errors, setErrors] = useState({});
   const [callBackParams, setCallBackParams] = useState([]);
@@ -66,6 +66,4 @@ const useForm = (
     setError,
     resetErrors,
   };
-};
-
-export default useForm;
+}

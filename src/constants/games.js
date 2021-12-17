@@ -1,38 +1,72 @@
-const LEVELS = {
+const LEVEL = {
   1: {
     value: 1,
     label: 'easy',
     numSquares: 3,
-    score: 10,
+    score: 0,
     chanceScore: 2,
+    chanceCount: 2,
+    seconds: 15,
   },
   2: {
     value: 2,
     label: 'medium',
     numSquares: 6,
-    score: 20,
+    score: 24,
     chanceScore: 4,
+    chanceCount: 2,
+    seconds: 10,
   },
   3: {
     value: 3,
     label: 'hard',
     numSquares: 9,
-    score: 30,
+    score: 54,
     chanceScore: 6,
+    chanceCount: 2,
+    seconds: 10,
+  },
+  4: {
+    value: 4,
+    label: 'extreme',
+    numSquares: 12,
+    score: 84,
+    chanceScore: 7,
+    chanceCount: 2,
+    seconds: 10,
+  },
+  5: {
+    value: 5,
+    label: 'insane',
+    numSquares: 15,
+    score: 90,
+    chanceScore: 6,
+    chanceCount: 2,
+    seconds: 10,
+  },
+  6: {
+    value: 6,
+    label: 'impossible',
+    numSquares: 18,
+    score: 108,
+    chanceScore: 6,
+    chanceCount: 2,
+    seconds: 10,
   },
 };
 
-const INITIAL_GAME = {
-  message: 'Guess the color',
-  score: 0,
-  chanceCount: 5,
-  result: '',
-  colors: [],
-  winColor: '',
-  pickedColor: 'rgb(70 130 180)',
-  level: LEVELS['1'],
-  loading: false,
-  error: '',
+const DEFAULT_COLOR = 'rgb(70 130 180)';
+
+const STATUS = {
+  COMPLETE: 'COMPLETE',
+  STARTED: 'STARTED',
+  NOT_STARTED: 'NOT_STARTED',
 };
 
-export { LEVELS, INITIAL_GAME };
+const RESULT = {
+  WIN: 'WIN',
+  LOST: 'LOST',
+  UNDETERMINED: '',
+};
+
+export { LEVEL, STATUS, RESULT, DEFAULT_COLOR };

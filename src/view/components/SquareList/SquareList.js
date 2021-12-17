@@ -9,20 +9,6 @@ const SquareList = () => {
   const { loggedInUser } = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    if (result !== '') {
-      if (loggedInUser)
-        dispatch(
-          saveGame({
-            level: level.label,
-            score,
-            result,
-            user: loggedInUser._id,
-          })
-        );
-    }
-  }, [result]);
-
   return (
     <div className="square-list">
       {colors.map((color, idx) => {

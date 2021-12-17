@@ -3,9 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import './StatusBar.css';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import { logout } from '../../../redux/actions/userActions';
-import { setGame } from '../../../redux/actions/gameActions';
-import { INITIAL_GAME, LEVELS } from '../../../constants/games';
-import { resetColors } from '../../../utils/colors';
+import { newGame } from '../../../redux/actions/gameActions';
 
 const StatusBar = () => {
   const dispatch = useDispatch();
@@ -19,8 +17,7 @@ const StatusBar = () => {
   };
 
   const handleNewGame = () => {
-    const { colors, winColor } = resetColors(LEVELS['1'].numSquares);
-    dispatch(setGame({ ...INITIAL_GAME, colors, winColor }));
+    dispatch(newGame());
     if (location.pathname !== '/') {
       history.push('/');
     }
