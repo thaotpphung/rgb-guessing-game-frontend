@@ -1,10 +1,27 @@
 import React, { useEffect } from 'react';
 import './SquareList.css';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { saveGame } from '../../../redux/actions/gameActions';
 import Square from '../Square/Square';
 
 const SquareList = () => {
-  const { colors } = useSelector((state) => state.game);
+  const { colors, result, score, level } = useSelector((state) => state.game);
+  const { loggedInUser } = useSelector((state) => state.user);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (result !== '') {
+      if (loggedInUser)
+        dispatch(
+          saveGame({
+            level: level.label,
+            score,
+            result,
+            user: loggedInUser._id,
+          })
+        );
+    }
+  }, [result]);
 
   return (
     <div className="square-list">

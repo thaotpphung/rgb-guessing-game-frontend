@@ -35,9 +35,10 @@ const StatusBar = () => {
       <span className="message">{message}</span>
       {loggedInUser ? (
         <>
-          <div className="label" onClick={handleLogout}>
+          <span className="label">{loggedInUser.name}</span>
+          <span className="label" onClick={handleLogout}>
             SIGN OUT
-          </div>
+          </span>
         </>
       ) : (
         <>

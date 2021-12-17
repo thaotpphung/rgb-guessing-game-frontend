@@ -14,7 +14,7 @@ const Game = () => {
     <div className="layout">
       <StatusBoard />
       <SquareList />
-      <StatusBoard />
+      <ScoreBoard />
     </div>
   );
 };

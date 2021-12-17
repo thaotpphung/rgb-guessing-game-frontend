@@ -18,7 +18,7 @@ export const signin = (formData) => API.post('api/signin', formData);
 export const signup = (formData) => API.post('api/signup', formData);
 
 // games
-export const getGamess = (query, userId) => {
+export const getGames = (query, userId) => {
   const url = `api/${userId && `users/${userId}/`}games`;
   return API.get(url);
 };
@@ -26,7 +26,7 @@ export const getGamess = (query, userId) => {
 export const saveGame = (newGame) => API.post('api/games', newGame);
 
 // scores
-export const geScores = () => {
+export const getScores = () => {
   const url = `api/scores`;
   return API.get(url, { params: { sort: 'score' } });
 };

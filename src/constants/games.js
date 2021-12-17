@@ -1,18 +1,18 @@
 const LEVELS = {
   1: {
-    num: 1,
+    value: 1,
     label: 'easy',
     numSquares: 3,
     score: 10,
   },
   2: {
-    num: 2,
+    value: 2,
     label: 'medium',
     numSquares: 6,
     score: 20,
   },
   3: {
-    num: 3,
+    value: 3,
     label: 'hard',
     numSquares: 9,
     score: 30,

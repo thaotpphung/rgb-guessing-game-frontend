@@ -12,10 +12,8 @@ const SignIn = () => {
   const { loggedInUser } = useSelector((state) => state.user);
 
   const initialForm = {
-    name: '',
     email: '',
     password: '',
-    confirmPassword: '',
   };
 
   const {

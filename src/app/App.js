@@ -23,11 +23,6 @@ function App() {
         winColor,
       })
     );
-    const socket = openSocket('http://localhost:5000');
-    socket.on('scores', (data) => {
-      console.log('data', data);
-      // setHighScores(data.scores);
-    });
   }, []);
 
   return (

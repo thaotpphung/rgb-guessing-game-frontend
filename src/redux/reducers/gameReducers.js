@@ -17,7 +17,6 @@ const userReducer = (state = INITIAL_GAME, action) => {
     case GAME_SAVE_SUCCESS:
       return {
         ...state,
-        ...action.payload.data,
         loading: false,
         error: '',
       };
@@ -26,7 +25,6 @@ const userReducer = (state = INITIAL_GAME, action) => {
       return {
         ...state,
         error: action.payload,
-        message: action.payload,
         loading: false,
       };
 
