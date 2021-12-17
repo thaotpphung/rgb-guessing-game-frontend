@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import openSocket from 'socket.io-client';
 import Modal from '../../common/Modal/Modal';
 import { getScores } from '../../../api/index';
+import { getEnvVars } from '../../../utils/envs';
 
 const ScoreBoard = () => {
   const [scores, setScores] = useState([]);
+  const env = getEnvVars();
 
   useEffect(() => {
-    const socket = openSocket('http://localhost:5000');
+    const socket = openSocket(env.BASE_URL);
     socket.on('scores', (data) => {
       setScores(data.scores);
     });

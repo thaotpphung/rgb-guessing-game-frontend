@@ -5,11 +5,12 @@ export const envVars = {
   },
   prod: {
     ENV: 'production',
-    BASE_URL: 'https://mealpal-thao.herokuapp.com/',
+    BASE_URL: 'https://color-guessing-game-thao.herokuapp.com/',
   },
 };
 
-export const getEnvVars = (host) => {
+export const getEnvVars = () => {
+  const host = window.location.host;
   switch (true) {
     case host.includes('localhost'):
       return envVars.local;

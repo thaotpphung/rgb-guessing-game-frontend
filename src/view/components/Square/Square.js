@@ -9,7 +9,6 @@ const Square = ({ color }) => {
   const dispatch = useDispatch();
   const game = useSelector((state) => state.game);
   const { winColor, level, score, colors, chanceCount, result } = game;
-  const { loggedInUser } = useSelector((state) => state.user);
   const { name } = useSelector((state) => state.user);
 
   const handlePickColor = () => {
@@ -47,9 +46,8 @@ const Square = ({ color }) => {
     }
     // check lose
     const nextChanceCount = chanceCount - 1;
-    const computedNextScore = score - level.score;
+    const computedNextScore = score - level.chanceScore;
     nextScore = computedNextScore >= 0 ? computedNextScore : score;
-
     if (nextChanceCount <= 0) {
       // lose
       dispatch(
