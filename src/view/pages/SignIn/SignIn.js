@@ -9,7 +9,7 @@ import signInForm from './form';
 const SignIn = () => {
   const dispatch = useDispatch();
   const history = useHistory();
-  const { loggedInUser } = useSelector((state) => state.user);
+  const { loggedInUser, error } = useSelector((state) => state.user);
 
   const initialForm = {
     email: '',
@@ -47,6 +47,7 @@ const SignIn = () => {
             <Link className="grey-text text-darken-1" to="/signup">
               Don&apos;t have an account? Sign Up
             </Link>
+            <div className="red-text">{error !== '' && error}</div>
           </div>
           <form noValidate onSubmit={handleSubmit}>
             {signInForm.map((field, idx) => {

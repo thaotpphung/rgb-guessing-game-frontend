@@ -20,7 +20,9 @@ const Square = ({ color }) => {
       const { colors, winColor } = resetColors(nextLevel.numSquares);
       dispatch(
         setGame({
-          message: `Correct! Moving on to next level!`,
+          message: `Correct! Level ${nextLevel.value}/${
+            Object.keys(LEVELS).length
+          }`,
           score: nextScore,
           colors,
           winColor,

@@ -10,11 +10,18 @@ import Spinner from '../../common/Spinner/Spinner';
 import './Game.css';
 
 const Game = () => {
+  const { error } = useSelector((state) => state.game);
+
   return (
-    <div className="layout">
-      <StatusBoard />
-      <SquareList />
-      <ScoreBoard />
+    <div>
+      {error !== '' && (
+        <div className="white center error red-text">{error}</div>
+      )}
+      <div className="layout">
+        <StatusBoard />
+        <SquareList />
+        <ScoreBoard />
+      </div>
     </div>
   );
 };
