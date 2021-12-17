@@ -14,7 +14,7 @@ import {
   setGame,
   lostGame,
 } from '../redux/actions/gameActions';
-import { STATUS } from '../constants/games';
+import { STATUS, RESULT } from '../constants/games';
 
 function App() {
   const dispatch = useDispatch();
@@ -30,7 +30,7 @@ function App() {
 
   // check end game
   useEffect(() => {
-    if (result !== '') {
+    if (result === RESULT.WIN) {
       if (loggedInUser)
         dispatch(
           saveGame({
