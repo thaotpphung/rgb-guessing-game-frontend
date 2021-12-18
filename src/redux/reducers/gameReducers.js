@@ -11,7 +11,6 @@ import {
 } from '../constants/gameConstants';
 import { LEVEL, STATUS, RESULT, DEFAULT_COLOR } from '../../constants/games';
 import { resetColors } from '../../utils/colors';
-import { newGame } from '../actions/gameActions';
 
 const INITIAL_GAME = {
   status: STATUS.STARTED,
@@ -19,7 +18,7 @@ const INITIAL_GAME = {
   level: LEVEL['1'],
   score: LEVEL['1'].score,
   chanceCount: LEVEL['1'].chanceCount,
-  message: 'Guess the color',
+  message: 'Which color?',
   result: RESULT.UNDETERMINED,
   colors: [],
   winColor: '',

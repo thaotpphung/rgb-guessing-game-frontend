@@ -25,27 +25,31 @@ const StatusBar = () => {
 
   return (
     <div className="status-bar">
-      <span className="label selected">{level.label}</span>
-      <span className="label" onClick={handleNewGame}>
-        New Game
-      </span>
+      <div>
+        <span className="label selected">{level.label}</span>
+        <span className="label" onClick={handleNewGame}>
+          New Game
+        </span>
+      </div>
+
       <span className="message">{message}</span>
+
       {loggedInUser ? (
-        <>
+        <div>
           <span className="label">{loggedInUser.name}</span>
           <span className="label" onClick={handleLogout}>
             SIGN OUT
           </span>
-        </>
+        </div>
       ) : (
-        <>
+        <div>
           <Link className="label" to="/signin">
             SIGN IN
           </Link>
           <Link className="label" to="/signup">
             SIGN UP
           </Link>
-        </>
+        </div>
       )}
     </div>
   );

@@ -2,11 +2,11 @@ const LEVEL = {
   1: {
     value: 1,
     label: 'easy',
-    numSquares: 6,
+    numSquares: 3,
     score: 0,
     chanceScore: 2,
-    chanceCount: 2,
-    seconds: 10,
+    chanceCount: 200,
+    seconds: 200,
   },
   2: {
     value: 2,

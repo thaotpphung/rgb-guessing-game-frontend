@@ -59,14 +59,18 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
-      <StatusBar />
-      <Switch>
-        <Route exact path="/" component={Game} />
-        <Route exact path="/signin" component={SignIn} />
-        <Route exact path="/signup" component={SignUp} />
-        <Route component={NotFound} />
-      </Switch>
+      <div className="app-header">
+        <Header />
+        <StatusBar />
+      </div>
+      <div className="app-body">
+        <Switch>
+          <Route exact path="/" component={Game} />
+          <Route exact path="/signin" component={SignIn} />
+          <Route exact path="/signup" component={SignUp} />
+          <Route component={NotFound} />
+        </Switch>
+      </div>
     </div>
   );
 }

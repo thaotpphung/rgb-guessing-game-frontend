@@ -12,6 +12,7 @@ body {
   background-attachment: fixed;
   background-size: 100%;
   background-color: #232323;
+  height: 100vh;
 }
 
 .steelblue {
@@ -32,4 +33,15 @@ body {
 
 .board {
   margin: 0 auto;
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  width: 100%; 
+}
+
+.app-body {
+  overflow: auto;
+  margin-top: 280px;
 }

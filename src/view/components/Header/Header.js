@@ -7,13 +7,11 @@ const Header = () => {
 
   return (
     <div className="heading" style={{ backgroundColor: pickedColor }}>
-      <h3>
-        <span className="space-around">The Great</span>
-        <br />
-        <span className="color">{winColor}</span>
-        <br />
-        <span className="space-around">Color Game</span>
-      </h3>
+      <span className="header-text">The Great</span>
+      <br />
+      <span className="color">{winColor}</span>
+      <br />
+      <span className="header-text">Color Game</span>
     </div>
   );
 };

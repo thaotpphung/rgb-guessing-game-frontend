@@ -5,12 +5,29 @@
     text-transform: uppercase;
     padding: 20px 0;
     transition: background-color .6s;
+    font-size: 40px; 
 }
 
 .heading .color {
 	font-size: 60px;
+    font-weight: bold;
 }
 
-.space-around {
+.header-text {
     margin: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    .heading {
+        font-size: 20px; 
+    }
+
+    .heading .color {
+        font-size: 30px;
+    }
+    .header-text {
+        font-size: 20px;
+    }
+  }
+
+  

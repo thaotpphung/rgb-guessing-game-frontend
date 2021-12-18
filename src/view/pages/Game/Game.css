@@ -1,10 +1,12 @@
 .game-layout {
-  display: flex
+  display: flex;
 }
 
 .game {
   background-color: #232323;
   height: 100vh;
+  max-height: 100vh;
+  overflow: auto;
 }
 
 .error {
