@@ -5,8 +5,8 @@ const LEVEL = {
     numSquares: 3,
     score: 0,
     chanceScore: 2,
-    chanceCount: 200,
-    seconds: 200,
+    chanceCount: 2,
+    seconds: 10,
   },
   2: {
     value: 2,
@@ -15,7 +15,7 @@ const LEVEL = {
     score: 24,
     chanceScore: 4,
     chanceCount: 2,
-    seconds: 3,
+    seconds: 2,
   },
   3: {
     value: 3,
@@ -24,7 +24,7 @@ const LEVEL = {
     score: 54,
     chanceScore: 6,
     chanceCount: 2,
-    seconds: 5,
+    seconds: 2,
   },
   4: {
     value: 4,
@@ -33,7 +33,7 @@ const LEVEL = {
     score: 84,
     chanceScore: 7,
     chanceCount: 2,
-    seconds: 5,
+    seconds: 2,
   },
   5: {
     value: 5,
@@ -42,7 +42,7 @@ const LEVEL = {
     score: 90,
     chanceScore: 6,
     chanceCount: 2,
-    seconds: 5,
+    seconds: 2,
   },
   6: {
     value: 6,
@@ -51,7 +51,7 @@ const LEVEL = {
     score: 108,
     chanceScore: 6,
     chanceCount: 2,
-    seconds: 5,
+    seconds: 3,
   },
 };
 
