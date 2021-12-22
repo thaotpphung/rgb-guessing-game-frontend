@@ -1,3 +1,5 @@
+## Introduction
+
 Guess the color based on the RGB code!
 
 ▶️ https://rgb.phungthao.com/
