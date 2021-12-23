@@ -27,10 +27,10 @@ const ScoreBoard = () => {
 
   return (
     <div className="board">
-      <Modal label="High Scores">
+      <Modal label="HIGH SCORES">
         {scores.map((score, idx) => (
           <div key={`score-${idx}`}>
-            {score.user.name}: {score.value}
+            <strong>{score.user.name}:</strong> {score.value}
           </div>
         ))}
       </Modal>

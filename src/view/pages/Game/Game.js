@@ -13,11 +13,7 @@ const Game = () => {
       {error !== '' && (
         <div className="white center error red-text">{error}</div>
       )}
-      <div className="game-layout">
-        <StatusBoard />
-        <SquareList />
-        <ScoreBoard />
-      </div>
+      <SquareList />
     </div>
   );
 };

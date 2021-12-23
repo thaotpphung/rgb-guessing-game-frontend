@@ -1,12 +1,12 @@
 .square-list {
-	margin: 20px auto;
-	width: 45%;
-	max-height: 100vh
+  margin: 30px auto;
+  width: 45%;
+  max-height: 100vh;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .square-list {
-		margin: 20px auto;
-		width: 80%;
-	}
+    margin: 160px auto;
+    width: 90%;
+  }
 }

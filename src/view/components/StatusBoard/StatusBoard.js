@@ -14,11 +14,15 @@ const StatusBoard = () => {
 
   return (
     <div className="board">
-      <Modal label="Status">
-        <div>Score: {score}</div>
-        <div>Chance: {chanceCount}</div>
+      <Modal label="STATUS">
         <div>
-          Time:
+          <strong>Score:</strong> {score}
+        </div>
+        <div>
+          <strong>Chance:</strong> {chanceCount}
+        </div>
+        <div>
+          <strong>Time:&nbsp;</strong>
           {twoDigits(hoursToDisplay)}:{twoDigits(minutesToDisplay)}:
           {twoDigits(secondsToDisplay)}
         </div>

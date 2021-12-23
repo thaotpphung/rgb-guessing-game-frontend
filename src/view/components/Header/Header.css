@@ -1,33 +1,48 @@
 .heading {
-	text-align: center;
-    color: #ffffff;
-    font-weight: normal;
-    text-transform: uppercase;
-    padding: 20px 0;
-    transition: background-color .6s;
-    font-size: 40px; 
+  text-align: center;
+  color: #ffffff;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 20px 0;
+  transition: background-color 0.6s;
+  font-size: 40px;
+  min-width: 375px;
 }
 
 .heading .color {
-	font-size: 60px;
-    font-weight: bold;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .header-text {
-    margin: 10px;
+  margin: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-    .heading {
-        font-size: 20px; 
-    }
+.app-header-layout {
+  display: flex;
+}
 
-    .heading .color {
-        font-size: 30px;
-    }
-    .header-text {
-        font-size: 20px;
-    }
+.app-header-layout div {
+  margin: 10px auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .heading {
+    font-size: 20px;
   }
 
-  
+  .heading .color {
+    font-size: 30px;
+  }
+  .header-text {
+    font-size: 20px;
+  }
+
+  .app-header-layout {
+    display: block;
+  }
+
+  .app-header-layout div {
+    margin: 0;
+  }
+}

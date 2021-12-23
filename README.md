@@ -1,16 +1,16 @@
-# RGB-Guess
+# Introduction
 
-Guess the color based on the RGB code!
+A platform for mealplanning, tracking diets, recipes, and grocery shopping
 
-▶️ https://rgb.phungthao.com/
+▶️ https://mealpal.netlify.app/
 
 ## Backend Repository
-https://github.com/thaotpphung/rgb-guessing-game-backend
+https://github.com/thaotpphung/mealpal-backend
 
 
 ## Project Details 
 
-https://phungthao.com/RBG-Guessing-Game-93965cbe0c904bc680e622053784cc73
+https://phungthao.com/MealPal-cbbee82a63eb4919a6fc8832f5073bf2
 
 > Features
 
