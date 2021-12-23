@@ -14,10 +14,10 @@ import { resetColors } from '../../utils/colors';
 
 const INITIAL_GAME = {
   status: STATUS.STARTED,
-  seconds: LEVEL['1'].seconds,
+  seconds: 10,
   level: LEVEL['1'],
-  score: LEVEL['1'].score,
-  chanceCount: LEVEL['1'].chanceCount,
+  score: 0,
+  chanceCount: 2,
   message: 'Which color?',
   result: RESULT.UNDETERMINED,
   colors: [],
@@ -36,7 +36,7 @@ const userReducer = (state = INITIAL_GAME, action) => {
       const { level, score, seconds, chanceCount } = state;
       const { color, nextLevel } = action.payload;
       const nextScore = score + level.score;
-      const nextChanceCount = chanceCount + nextLevel.chanceCount;
+      const nextChanceCount = chanceCount + level.chanceCount;
       const nextTimer = seconds + level.seconds;
       const { colors, winColor } = resetColors(nextLevel.numSquares);
       const newGame = {

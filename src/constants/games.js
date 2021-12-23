@@ -3,10 +3,10 @@ const LEVEL = {
     value: 1,
     label: 'easy',
     numSquares: 3,
-    score: 0,
+    score: 6,
     chanceScore: 2,
     chanceCount: 2,
-    seconds: 10,
+    seconds: 2,
   },
   2: {
     value: 2,
@@ -14,7 +14,7 @@ const LEVEL = {
     numSquares: 6,
     score: 24,
     chanceScore: 4,
-    chanceCount: 2,
+    chanceCount: 1,
     seconds: 2,
   },
   3: {
@@ -23,7 +23,7 @@ const LEVEL = {
     numSquares: 9,
     score: 54,
     chanceScore: 6,
-    chanceCount: 2,
+    chanceCount: 1,
     seconds: 2,
   },
   4: {
@@ -32,7 +32,7 @@ const LEVEL = {
     numSquares: 12,
     score: 84,
     chanceScore: 7,
-    chanceCount: 2,
+    chanceCount: 1,
     seconds: 2,
   },
   5: {
@@ -41,8 +41,8 @@ const LEVEL = {
     numSquares: 15,
     score: 90,
     chanceScore: 6,
-    chanceCount: 2,
-    seconds: 2,
+    chanceCount: 1,
+    seconds: 3,
   },
   6: {
     value: 6,
@@ -50,8 +50,8 @@ const LEVEL = {
     numSquares: 18,
     score: 108,
     chanceScore: 6,
-    chanceCount: 2,
-    seconds: 3,
+    chanceCount: 0,
+    seconds: 2,
   },
 };
 
