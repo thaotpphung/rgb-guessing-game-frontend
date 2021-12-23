@@ -26,7 +26,7 @@
   margin: 10px auto;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 780px) {
   .heading {
     font-size: 20px;
   }

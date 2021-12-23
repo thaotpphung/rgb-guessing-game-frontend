@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Introduction
+=======
+## Introduction
+>>>>>>> 83e324f232fb85009d78b5b15eb624f72b05b3c9
 
 A platform for mealplanning, tracking diets, recipes, and grocery shopping
 
